@@ -1,4 +1,4 @@
-#! python3
+#! /usr/bin/env python3
 # mapIt.py
 # command line or clipboard
 
@@ -9,3 +9,4 @@ if len(sys.argv) > 1:
 else:
   # Get address from the clipboard
   address = pyperclip.paste()
+webbrowser.open('https://google.com/maps/place/' + address)
